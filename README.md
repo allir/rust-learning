@@ -1,3 +1,6 @@
 # Rust learning
 
-https://doc.rust-lang.org/rust-by-example/index.html
+## Resources
+
+- https://doc.rust-lang.org/book/
+- https://doc.rust-lang.org/rust-by-example/
