@@ -1,7 +1,3 @@
-#![allow(dead_code)]
-#![allow(unused_imports)]
-#![allow(unused_must_use)]
-
 use std::io::stdin;
 use std::io::stdout;
 use std::io::Write;
