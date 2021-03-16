@@ -1,15 +1,14 @@
-// Import std::io for stdin & stdout.
-use std::io;
-use std::io::Write;
+use std::io::{stdin, stdout};
+use std::io::Write;  /* for flushing stdout */
 
 fn main() {
     println!("Hello, Mars!");
 
     print!("Enter your weight (kg): ");
-    io::stdout().flush().unwrap();
+    stdout().flush().unwrap();
 
     let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
+    stdin().read_line(&mut input).unwrap();
 
     let earth_weight = input.trim().parse().unwrap();
     let mars_weight = calculate_mars_weight(earth_weight);
