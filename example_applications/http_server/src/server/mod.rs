@@ -3,10 +3,8 @@ pub struct Server {
 }
 
 impl Server{
-    pub fn new(mut address:String, port: String) -> Self {
-        address.push_str(":");
-        address.push_str(&port);
-        Self { address }
+    pub fn new(address:String, port: String) -> Self {
+        Self { address: format!("{}:{}", address, port) }
     }
 
     pub fn run(&self) {
